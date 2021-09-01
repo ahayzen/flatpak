@@ -2624,6 +2624,7 @@ setup_seccomp (FlatpakBwrap   *bwrap,
     {SCMP_SYS (umount), EPERM},
     {SCMP_SYS (umount2), EPERM},
     {SCMP_SYS (pivot_root), EPERM},
+    {SCMP_SYS (chroot), EPERM},
     {SCMP_SYS (clone), EPERM, &SCMP_A0 (SCMP_CMP_MASKED_EQ, CLONE_NEWUSER, CLONE_NEWUSER)},
 
     /* Don't allow faking input to the controlling tty (CVE-2017-5226) */
