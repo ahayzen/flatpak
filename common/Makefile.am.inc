@@ -124,6 +124,7 @@ libflatpak_common_la_SOURCES = \
 	common/flatpak-installation.c \
 	common/flatpak-instance-private.h \
 	common/flatpak-instance.c \
+	common/flatpak-syscalls-private.h \
 	common/valgrind-private.h \
 	$(NULL)
 

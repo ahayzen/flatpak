@@ -33,6 +33,8 @@
 #include <unistd.h>
 #include <gio/gunixfdlist.h>
 
+#include "flatpak-syscalls-private.h"
+
 #ifdef ENABLE_SECCOMP
 #include <seccomp.h>
 #endif
