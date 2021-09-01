@@ -2621,6 +2621,8 @@ setup_seccomp (FlatpakBwrap   *bwrap,
     {SCMP_SYS (unshare), EPERM},
     {SCMP_SYS (setns), EPERM},
     {SCMP_SYS (mount), EPERM},
+    {SCMP_SYS (umount), EPERM},
+    {SCMP_SYS (umount2), EPERM},
     {SCMP_SYS (pivot_root), EPERM},
     {SCMP_SYS (clone), EPERM, &SCMP_A0 (SCMP_CMP_MASKED_EQ, CLONE_NEWUSER, CLONE_NEWUSER)},
 
